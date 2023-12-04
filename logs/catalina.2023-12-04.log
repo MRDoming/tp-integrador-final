@@ -1,0 +1,74 @@
+04-Dec-2023 18:43:14.003 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.83
+04-Dec-2023 18:43:14.008 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 9 2023 20:57:42 UTC
+04-Dec-2023 18:43:14.009 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.83.0
+04-Dec-2023 18:43:14.009 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+04-Dec-2023 18:43:14.009 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            12.3.1
+04-Dec-2023 18:43:14.009 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+04-Dec-2023 18:43:14.009 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk-11.0.16.jdk/Contents/Home
+04-Dec-2023 18:43:14.009 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.16+11-LTS-199
+04-Dec-2023 18:43:14.009 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+04-Dec-2023 18:43:14.010 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/maria/Documents/codo a codo /tpfinal-23050-master
+04-Dec-2023 18:43:14.010 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/maria/Documents/codo a codo /apache-tomcat-9.0.83
+04-Dec-2023 18:43:14.033 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+04-Dec-2023 18:43:14.040 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+04-Dec-2023 18:43:14.040 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+04-Dec-2023 18:43:14.040 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+04-Dec-2023 18:43:14.040 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+04-Dec-2023 18:43:14.040 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/maria/Documents/codo a codo /apache-tomcat-9.0.83
+04-Dec-2023 18:43:14.041 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/maria/Documents/codo a codo /tpfinal-23050-master
+04-Dec-2023 18:43:14.041 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/maria/Documents/codo a codo /tpfinal-23050-master/temp
+04-Dec-2023 18:43:14.041 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/maria/Documents/codo a codo /tpfinal-23050-master/conf/logging.properties
+04-Dec-2023 18:43:14.041 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+04-Dec-2023 18:43:14.041 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=58478:/Applications/IntelliJ IDEA CE.app/Contents/bin
+04-Dec-2023 18:43:14.042 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+04-Dec-2023 18:43:14.058 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/maria/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+04-Dec-2023 18:43:14.891 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+04-Dec-2023 18:43:14.997 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1455] milliseconds
+04-Dec-2023 18:43:15.103 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+04-Dec-2023 18:43:15.107 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.83]
+04-Dec-2023 18:43:15.141 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/Users/maria/Documents/codo a codo /tpfinal-23050-master/conf/Catalina/localhost/tpfinal-23050-master.xml]
+04-Dec-2023 18:43:16.225 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Dec-2023 18:43:16.264 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/Users/maria/Documents/codo a codo /tpfinal-23050-master/conf/Catalina/localhost/tpfinal-23050-master.xml] has finished in [1,140] ms
+04-Dec-2023 18:43:16.267 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+04-Dec-2023 18:43:16.292 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1293] milliseconds
+04-Dec-2023 18:43:51.604 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+04-Dec-2023 18:43:51.611 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+04-Dec-2023 18:43:51.656 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+04-Dec-2023 18:43:51.676 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+04-Dec-2023 19:30:45.515 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.83
+04-Dec-2023 19:30:45.519 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 9 2023 20:57:42 UTC
+04-Dec-2023 19:30:45.529 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.83.0
+04-Dec-2023 19:30:45.529 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+04-Dec-2023 19:30:45.529 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            12.3.1
+04-Dec-2023 19:30:45.529 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+04-Dec-2023 19:30:45.529 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk-11.0.16.jdk/Contents/Home
+04-Dec-2023 19:30:45.531 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.16+11-LTS-199
+04-Dec-2023 19:30:45.531 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+04-Dec-2023 19:30:45.532 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/maria/Documents/codo a codo /tpfinal-23050-master
+04-Dec-2023 19:30:45.532 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/maria/Documents/codo a codo /apache-tomcat-9.0.83
+04-Dec-2023 19:30:45.534 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+04-Dec-2023 19:30:45.534 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+04-Dec-2023 19:30:45.534 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+04-Dec-2023 19:30:45.535 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+04-Dec-2023 19:30:45.535 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+04-Dec-2023 19:30:45.535 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/maria/Documents/codo a codo /apache-tomcat-9.0.83
+04-Dec-2023 19:30:45.535 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/maria/Documents/codo a codo /tpfinal-23050-master
+04-Dec-2023 19:30:45.536 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/maria/Documents/codo a codo /tpfinal-23050-master/temp
+04-Dec-2023 19:30:45.536 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/maria/Documents/codo a codo /tpfinal-23050-master/conf/logging.properties
+04-Dec-2023 19:30:45.536 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+04-Dec-2023 19:30:45.536 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=61421:/Applications/IntelliJ IDEA CE.app/Contents/bin
+04-Dec-2023 19:30:45.536 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+04-Dec-2023 19:30:45.573 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/maria/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+04-Dec-2023 19:30:46.494 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+04-Dec-2023 19:30:46.554 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1890] milliseconds
+04-Dec-2023 19:30:46.698 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+04-Dec-2023 19:30:46.698 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.83]
+04-Dec-2023 19:30:46.730 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/Users/maria/Documents/codo a codo /tpfinal-23050-master/conf/Catalina/localhost/tpfinal-23050-master.xml]
+04-Dec-2023 19:30:47.782 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Dec-2023 19:30:47.840 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/Users/maria/Documents/codo a codo /tpfinal-23050-master/conf/Catalina/localhost/tpfinal-23050-master.xml] has finished in [1,110] ms
+04-Dec-2023 19:30:47.845 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+04-Dec-2023 19:30:47.875 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1320] milliseconds
+04-Dec-2023 19:31:09.261 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+04-Dec-2023 19:31:09.269 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+04-Dec-2023 19:31:09.298 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+04-Dec-2023 19:31:09.310 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
