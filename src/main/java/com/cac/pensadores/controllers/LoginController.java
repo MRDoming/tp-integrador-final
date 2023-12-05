@@ -26,8 +26,8 @@ public class LoginController extends HttpServlet {
 
 
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/cac23050?useSSL=false", "root", "12345678");
+            Class.forName(System.getenv("driver_bd"));
+            Connection con = DriverManager.getConnection(System.getenv("url_bd"), System.getenv("user_bd"), System.getenv("pass_bd"));
             final String QUERY = "select * from users where email = ? and password = ?";
             PreparedStatement ps = con.prepareStatement(QUERY);
             ps.setString(1, umail);

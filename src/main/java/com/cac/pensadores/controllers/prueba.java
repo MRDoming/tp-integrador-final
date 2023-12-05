@@ -36,6 +36,15 @@ public class prueba {
 
                 int rowCount = pst.executeUpdate();
 
+                final String STATEMENTDOS = "insert into users (nombre, apellido, email, password) values (?,?,?,?)";
+                PreparedStatement pstt = connection.prepareStatement(STATEMENTDOS);
+                pstt.setString(1, "hoola");
+                pstt.setString(2, "hola");
+                pstt.setString(3, "uemail");
+                pstt.setString(4, "upwd");
+
+                int rowCountt = pstt.executeUpdate();
+
                 System.out.println(rowCount);
 
                 boolean valid = connection.isValid(50000);

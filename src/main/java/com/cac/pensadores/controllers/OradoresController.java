@@ -13,32 +13,32 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-@WebServlet(name="oradores", value="/oradores")
+@WebServlet(name="oradores", urlPatterns = {"/oradores"})
 public class OradoresController extends HttpServlet {
-    private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 102831973239L;
 
     /**
      * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
      */
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        String uname = request.getParameter("nombre");
-        String usurname = request.getParameter("apellido");
-        String uemail = request.getParameter("mail");
-        String upwd = request.getParameter("tema");
+        String nombre = request.getParameter("nombre");
+        String apellido = request.getParameter("apellido");
+        String mail = request.getParameter("mail");
+        String tema = request.getParameter("tema");
         RequestDispatcher disp = null;
         Connection con = null;
 
 
         try {
-            Class.forName("org.postgresql.Driver");
-            con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/integrador_cac", "mariahomebanking", "1234");
+            Class.forName(System.getenv("driver_bd"));
+            con = DriverManager.getConnection(System.getenv("url_bd"), System.getenv("user_bd"), System.getenv("pass_bd"));
             final String STATEMENT = "insert into oradores (nombre, apellido, mail, tema) values (?, ?, ?, ?)";
             PreparedStatement pst = con.prepareStatement(STATEMENT);
-            pst.setString(1, uname);
-            pst.setString(2, usurname);
-            pst.setString(3, uemail);
-            pst.setString(4, upwd);
+            pst.setString(1, nombre);
+            pst.setString(2, apellido);
+            pst.setString(3, mail);
+            pst.setString(4, tema);
 
             int rowCount = pst.executeUpdate();
             disp = request.getRequestDispatcher("index.jsp");
