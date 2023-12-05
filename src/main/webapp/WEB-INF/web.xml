@@ -10,4 +10,15 @@
     </context-param>
 
 
+        <servlet>
+            <servlet-name>tabla</servlet-name>
+            <servlet-class>com.cac.pensadores.controllers.TablaController</servlet-class>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>tabla</servlet-name>
+            <url-pattern>/tabla</url-pattern>
+        </servlet-mapping>
+
+
+
 </web-app>

@@ -1,4 +1,9 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
+<%@ page import="java.sql.ResultSet" %>
+<%@ page import="java.sql.Statement" %>
+<%@ page import="java.sql.Connection" %>
+<%@ page import="java.sql.DriverManager" %>
+
 <!--%
     if(session.getAttribute("email") == null){
         response.sendRedirect("login.jsp");
@@ -183,37 +188,55 @@
         </div>
     </section>
 
-    <table class="table">
-      <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">First</th>
-          <th scope="col">Last</th>
-          <th scope="col">Handle</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td>Larry</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
-        </tr>
-      </tbody>
-    </table>
+<div class="row justify-content-center" id="tablaOradores">
+    <div class="col-lg-8 col-xl-7 row justify-content-center" id="tablaOradores">
+        <h2>Oradores ya registrados:</h2>
 
+            <table class="table table-hover borderTabla" id="tablaOradores">
+              <thead>
+                <tr>
+                  <th scope="col">Nombre</th>
+                  <th scope="col">Apellido</th>
+                  <th scope="col" class=".d-md-none .d-lg-block">Mail</th>
+                  <th scope="col">Tema</th>
+                </tr>
+              </thead>
+              <tbody>
+              <%
+                  try
+                  {
+                  Class.forName(System.getenv("driver_bd"));
+                  String query="select * from oradores";
+                  Connection conn=DriverManager.getConnection(System.getenv("url_bd"), System.getenv("user_bd"), System.getenv("pass_bd"));
+                  Statement stmt=conn.createStatement();
+                  ResultSet rs=stmt.executeQuery(query);
+                  while(rs.next())
+                  {
+
+                  %>
+                  <tr><td><%=rs.getString("nombre") %></td>
+                  <td><%=rs.getString("apellido") %></td>
+                  <td class="d-none d-lg-block"><%=rs.getString("mail") %></td>
+                  <td><%=rs.getString("tema") %></td></tr>
+                   <%
+
+                  }
+                  %>
+                  </tbody>
+                  </table>
+                  <%
+                  rs.close();
+                  stmt.close();
+                  conn.close();
+                  }
+                  catch(Exception e)
+                  {
+                  e.printStackTrace();
+                  }
+                  %>
+                  </form>
+                  </div>
+                  </div>
 </main>
 
 <jsp:include page="footer.jsp"/>

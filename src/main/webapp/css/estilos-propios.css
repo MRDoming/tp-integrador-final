@@ -24,6 +24,15 @@
   }
 }
 
+@media (max-width: 425px){
+
+    #tablaOradores {
+        max-width: 420px !important;
+        padding-right: 0px !important;
+    }
+
+}
+
 .pt-section { padding-top: 7rem; }
 
 /* ESTILOS TITULOS
@@ -80,6 +89,11 @@
   color: #fff !important;
 }
 .btn-form:hover { background: #74aa17; }
+
+.borderTabla {
+    border: 1px !important;
+    border-color: #96c93e !important;
+    }
 
 /* FORM COMPRAR TICKETS
 -------------------------------------------------- */

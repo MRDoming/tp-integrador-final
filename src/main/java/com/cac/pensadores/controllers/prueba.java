@@ -1,10 +1,14 @@
 package com.cac.pensadores.controllers;
 
+import com.cac.pensadores.clases.Orador;
 import jakarta.servlet.RequestDispatcher;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
 
 public class prueba {
 
@@ -44,6 +48,26 @@ public class prueba {
                 pstt.setString(4, "upwd");
 
                 int rowCountt = pstt.executeUpdate();
+
+                List<Orador> oradores = new ArrayList<>();
+
+                String query = "SELECT nombre, apellido, mail, tema FROM oradores";
+                PreparedStatement ps = connection.prepareStatement(query);
+
+                // Ejecutar la consulta
+                ResultSet rs = ps.executeQuery();
+
+                // Obtener datos y almacenarlos en una lista de objetos Usuario
+                while (rs.next()) {
+                    String nombre = rs.getString("nombre");
+                    String apellido = rs.getString("apellido");
+                    String mail = rs.getString("mail");
+                    String tema = rs.getString("tema");
+                    oradores.add(new Orador(nombre, apellido, mail, tema));
+                }
+
+                System.out.println(oradores.size());
+                System.out.println(oradores);
 
                 System.out.println(rowCount);
 
