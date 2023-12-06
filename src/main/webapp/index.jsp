@@ -197,7 +197,7 @@
                 <tr>
                   <th scope="col">Nombre</th>
                   <th scope="col">Apellido</th>
-                  <th scope="col" class=".d-md-none .d-lg-block">Mail</th>
+                  <th scope="col" class="d-none d-lg-block">Mail</th>
                   <th scope="col">Tema</th>
                 </tr>
               </thead>
